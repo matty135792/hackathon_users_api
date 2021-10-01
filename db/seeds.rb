@@ -25,7 +25,6 @@ phone: '(122)-523-10390', email: 'gabe.bradley@example.com')
 
 
 
-
 Job.create( title: "Graduate Developer", employer: "Access", location: "Loughborough",
 salary: 100000, deadline: "16/12/22", start_date: "18/12/22")
 Job.create( title: "QA", employer: "Access", location: "London",
@@ -34,3 +33,21 @@ Job.create( title: "Technology Director", employer: "Access", location: "New Yor
 salary: 17000, deadline: "7/2/22", start_date: "2/3/22")
 Job.create( title: "Graduate Developer", employer: "Access", location: "York",
 salary: 150000, deadline: "5/3/22", start_date: "1/12/22")
+
+
+
+User.first.jobs << Job.first
+User.first.jobs << Job.second
+User.second.jobs << Job.third
+User.third.jobs << Job.second
+User.third.jobs << Job.third
+User.fourth.jobs << Job.first
+User.fourth.jobs << Job.second
+User.fifth.jobs << Job.first
+User.all[5].jobs << Job.third
+User.all[6].jobs << Job.first
+User.all[6].jobs << Job.second
+User.all[6].jobs << Job.third
+User.all[6].jobs << Job.fourth
+User.all[7].jobs << Job.third
+User.all[7].jobs << Job.fourth

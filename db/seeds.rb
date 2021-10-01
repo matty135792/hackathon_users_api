@@ -22,3 +22,15 @@ User.create(name: 'Alex Collins', image: 'https://randomuser.me/api/portraits/me
 phone: '(123)-242-5689', email: 'alex.collins@example.com')
 User.create(name: 'Gabe Bradley', image: 'https://randomuser.me/api/portraits/men/14.jpg', jobAlerts:'Team Leader, Graphics Designer',
 phone: '(122)-523-10390', email: 'gabe.bradley@example.com')
+
+
+
+
+Job.create( title: "Graduate Developer", employer: "Access", location: "Loughborough",
+salary: 100000, deadline: "16/12/22", start_date: "18/12/22")
+Job.create( title: "QA", employer: "Access", location: "London",
+salary: 40000, deadline: "1/5/22", start_date: "18/5/22")
+Job.create( title: "Technology Director", employer: "Access", location: "New York",
+salary: 17000, deadline: "7/2/22", start_date: "2/3/22")
+Job.create( title: "Graduate Developer", employer: "Access", location: "York",
+salary: 150000, deadline: "5/3/22", start_date: "1/12/22")

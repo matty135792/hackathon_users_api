@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
   def alerts
     puts params
-    @users = User.all[params[:id].to_i].jobs
+    @users = User.all[params[:id].to_i - 1].jobs
 
     render json: @users
   end

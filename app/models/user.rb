@@ -1,4 +1,3 @@
 class User < ApplicationRecord
-    has_many :jobs_users
-    has_many :jobs, through :jobs_users
+    has_and_belongs_to_many :jobs
 end
